@@ -1,36 +1,54 @@
 /****************************
 *ESTRUTURA BASE PARA UM MENU*
 *****************************/
+const reservas = [];
 
-function opcao1() {
-    console.log("Você escolheu a Opção 1.");
+function criarReserva() {
+  // Implementar criação de reserva
+}
+
+function visualizarReservas() {
+  // Implementar visualização de reservas
+}
+
+function editarReserva() {
+  // Implementar edição de reserva
+}
+
+function deletarReserva() {
+  // Implementar exclusão de reserva
+}
+
+function exibirMenu() {
+  console.log("Menu:");
+  console.log("1. Criar Reserva");
+  console.log("2. Visualizar Reservas");
+  console.log("3. Editar Reserva");
+  console.log("4. Deletar Reserva");
+  console.log("5. Sair");
+  const opcao = prompt("Digite o número da opção desejada:");
+
+  switch (opcao) {
+    case "1":
+      // Chamar função de criar reserva
+      break;
+    case "2":
+      // Chamar função de visualizar reservas
+      break;
+    case "3":
+      // Chamar função de editar reserva
+      break;
+    case "4":
+      // Chamar função de deletar reserva
+      break;
+    case "5":
+      console.log("Saindo do programa. Até logo!");
+      return;
+    default:
+      console.log("Opção inválida. Tente novamente.");
   }
-  
-  function opcao2() {
-    console.log("Você escolheu a Opção 2.");
-  }
-  
-  function opcao3() {
-    console.log("Você escolheu a Opção 3.");
-  }
-  
-  function exibirMenu() {
-    console.log("Selecione uma opção:");
-    console.log("1. Opção 1");
-    console.log("2. Opção 2");
-    console.log("3. Opção 3");
-  }
-  
-  exibirMenu();
-  
-  const escolha = prompt("Digite o número da opção desejada:");
-  
-  if (escolha === "1") {
-    opcao1();
-  } else if (escolha === "2") {
-    opcao2();
-  } else if (escolha === "3") {
-    opcao3();
-  } else {
-    console.log("Opção inválida.");
-  } 
+
+  // Chamar função de exibir menu novamente
+}
+
+exibirMenu();
